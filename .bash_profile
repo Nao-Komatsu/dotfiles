@@ -11,6 +11,7 @@ PS1="[\[\033[36m\]\u@\h \[\033[00m\]\W]\\$ "
 
 HISTTIMEFORMAT='%F %T '
 HISTSIZE=10000
+HISTIGNORE=ls:history
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
