@@ -7,6 +7,7 @@ Original dotfiles for myself.
 ```
 cd ~
 git clone https://github.com/Nao-Komatsu/dotfiles.git
-./dotfiles/dotfilesLink.sh
-source .bash_profile
+./dotfiles/install.sh
+vim
+:PlugInstall
 ```
