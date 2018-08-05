@@ -45,7 +45,11 @@ set background=dark
 syntax on
 
 " 行番号の色
-highlight LineNr ctermfg=darkgreen
+highlight LineNr ctermfg=39
+highlight LineNr ctermbg=234
+
+" カラースキーマ設定
+colorscheme default
 
 " ---------- Tab ----------
 " 行頭以外の Tab 文字の表示幅を 4 に設定
@@ -63,6 +67,9 @@ set wrapscan
 
 " 検索語をハイライト表示
 set hlsearch
+
+" ---------- Key binding ----------
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " ---------- Advanced setting ----------
 " 全角スペースの可視化
@@ -128,6 +135,9 @@ call plug#end()
 
 " ---------- Plugin setting ----------
 let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+hi IndentGuidesOdd ctermbg=236
+hi IndentGuidesEven ctermbg=237
 
 " ---------- Alias ----------
 " NERDTree プラグインのエイリアス

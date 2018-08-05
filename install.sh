@@ -3,7 +3,6 @@
 # Bash setting.
 ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
-source ~/.bash_profile
 
 # vim-plug install.
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
