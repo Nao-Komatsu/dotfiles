@@ -44,12 +44,12 @@ set background=dark
 " 構文毎に文字色を変化
 syntax on
 
+" カラースキーマ設定
+colorscheme default
+
 " 行番号の色
 highlight LineNr ctermfg=39
 highlight LineNr ctermbg=234
-
-" カラースキーマ設定
-colorscheme default
 
 " ---------- Tab ----------
 " 行頭以外の Tab 文字の表示幅を 4 に設定
