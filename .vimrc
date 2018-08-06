@@ -138,7 +138,12 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 hi IndentGuidesOdd ctermbg=236
 hi IndentGuidesEven ctermbg=237
-autocmd vimenter * if !argc() | NERDTree | endif	" 引数なしで Vim を起動した場合，NERDTree を自動起動
+" autocmd vimenter * if !argc() | NERDTree | endif	" 引数なしで Vim を起動した場合，NERDTree を自動起動
+function s:MoveToFileAtStart()
+  call feedkeys("\")
+  call feedkeys("\l")
+endfunction
+autocmd VimEnter *  NERDTree | call s:MoveToFileAtStart()
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif	" 終了時，NERDTree も終了
 
 " ---------- Alias ----------

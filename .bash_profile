@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-PS1="[\[\033[31m\]\u@\h \[\033[00m\]\W]\\$ "
+PS1="[\[\033[36m\]\u@\h \[\033[00m\]\W]\\$ "
 
 HISTTIMEFORMAT='%F %T '
 HISTSIZE=10000
