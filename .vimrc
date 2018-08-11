@@ -154,5 +154,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 :command Texit NERDTreeClose
 
 " ---------- Filetype setting ----------
-" .py は Python ファイルとして認識
-autocmd BufRead,BufNewFile *.py setfiletype python
+autocmd BufRead,BufNewFile *.py setfiletype python			" .py は Python ファイルとして認識
+autocmd FileType python setlocal completeopt-=preview		" docstring のポップアップを無効化
