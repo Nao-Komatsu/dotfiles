@@ -131,6 +131,8 @@ Plug 'scrooloose/nerdtree'				" ディレクトリツリーの表示
 Plug 'tomtom/tcomment_vim'				" 一括コメントアウト
 Plug 'nathanaelkane/vim-indent-guides'	" インデントの深さを可視化
 Plug 'bronson/vim-trailing-whitespace'	" 行末の半角スペースを可視化
+" Python
+Plug 'davidhalter/jedi-vim'				" Python の補完
 call plug#end()
 
 " ---------- Plugin setting ----------
@@ -150,3 +152,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " NERDTree プラグインのエイリアス
 :command Topen NERDTree
 :command Texit NERDTreeClose
+
+" ---------- Filetype setting ----------
+" .py は Python ファイルとして認識
+autocmd BufRead,BufNewFile *.py setfiletype python
