@@ -5,9 +5,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-if [ -f ~/.bash_profile ]; then
-	. ~/.bash_profile
-fi
+# Archlinux setting
+# if [ -f ~/.bash_profile ]; then
+# 	. ~/.bash_profile
+# fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
