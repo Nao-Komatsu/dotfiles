@@ -1,6 +1,8 @@
 "
-" ---------- Setting ----------
+" ~/.vimrc
 "
+
+" ---------- Setting ----------
 " 文字コードを UTF-8 に設定
 set fenc=utf-8
 
@@ -74,7 +76,7 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 " ---------- Advanced setting ----------
 " 全角スペースの可視化
 function! ZenkakuSpace()
-	highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
+	highlight ZenkakuSpace cterm=reverse ctermfg=red guibg=darkgray
 endfunction
 
 if has('syntax')
