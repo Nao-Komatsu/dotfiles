@@ -8,7 +8,7 @@ Original dotfiles for myself.
 cd ~
 git clone https://github.com/nsecdevs/dotfiles.git
 ./dotfiles/install.sh
-source ~/.bash_profile
+source ~/.bashrc
 vim
 :PlugInstall
 ```
