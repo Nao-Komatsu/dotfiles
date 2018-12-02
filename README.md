@@ -22,3 +22,7 @@ vim
 - 35 : Pink
 - 36 : Light blue
 - 37 : White
+
+## Tested
+
+- Arch Linux
