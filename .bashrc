@@ -2,9 +2,9 @@
 # ~/.bashrc
 #
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+# Source definitions by environments
+if [ -f ~/.myconf ]; then
+	. ~/.myconf
 fi
 
 # User specific aliases and functions
