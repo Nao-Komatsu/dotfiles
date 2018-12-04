@@ -156,6 +156,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 :command Texit NERDTreeClose
 
 " ---------- Filetype setting ----------
-autocmd BufRead,BufNewFile *.py setfiletype python					" .py は Python ファイルとして認識
-autocmd FileType python setlocal completeopt-=preview				" docstring のポップアップを無効化
-autocmd BufRead,BufNewFile *.rst setlocal tabstop=3 shiftwidth=3	" .rst のタブ文字数設定
+" .py は Python ファイルとして認識
+autocmd BufRead,BufNewFile *.py set filetype=python
+" docstring のポップアップを無効化
+autocmd FileType python setlocal completeopt-=preview
+" .rst のタブ文字数設定
+autocmd BufRead,BufNewFile *.rst setlocal tabstop=3 shiftwidth=3
+" .md は Markdown ファイルとして認識
+autocmd BufRead,BufNewFile *.md set filetype=markdown
