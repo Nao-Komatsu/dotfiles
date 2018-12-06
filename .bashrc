@@ -22,10 +22,12 @@ alias su='su -'
 
 # Environment variable
 
-PS1="[\[\033[36m\]\u@\h \[\033[00m\]\W]\\$ "
+COLOR="36"
+
+PS1="[\[\033[${COLOR}m\]\$?\[\033[00m\]|\[\033[${COLOR}m\]\u@\h \[\033[00m\]\w]\n\\$ "
 
 HISTTIMEFORMAT='%F %T '
-HISTSIZE=10000
+HISTSIZE=50000
 HISTIGNORE=ls:history
 
 export PS1 HISTTIMEFORMAT HISTSIZE HISTIGNORE
