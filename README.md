@@ -26,3 +26,5 @@ vim
 ## Tested
 
 - Arch Linux
+- Ubuntu 16.04
+- CentOS 7
