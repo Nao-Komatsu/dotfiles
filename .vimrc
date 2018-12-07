@@ -190,12 +190,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ---------- Filetype setting ----------
 " .py は Python ファイルとして認識
 autocmd BufRead,BufNewFile *.py set filetype=python
-" docstring のポップアップを無効化
-autocmd FileType python setlocal completeopt-=preview
-" .rst のタブ文字数設定
-autocmd BufRead,BufNewFile *.rst setlocal tabstop=3 shiftwidth=3
 " .md は Markdown ファイルとして認識
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+" .rst は reStructuredText ファイルとして認識
+autocmd BufRead,BufNewFile *.rst set filetype=restructuredtext
 
 " ---------- Commands ----------
 " NERDTree 開閉のコマンド
