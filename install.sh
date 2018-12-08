@@ -9,5 +9,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # Vim setting
 mkdir -p ~/.vim/ftplugin/
-ln -sf ~/dotfiles/filetype/*.vim ~/.vim/ftplugin/
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sfv ~/dotfiles/filetype/*.vim ~/.vim/ftplugin/
+ln -sfv ~/dotfiles/.vimrc ~/.vimrc
