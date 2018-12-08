@@ -9,7 +9,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # Vim setting
 mkdir -p ~/.vim/ftplugin/
-ln -sf ~/dotfiles/filetype/python.vim ~/.vim/ftplugin/python.vim
-ln -sf ~/dotfiles/filetype/markdown.vim ~/.vim/ftplugin/markdown.vim
-ln -sf ~/dotfiles/filetype/restructuredtext.vim ~/.vim/ftplugin/restructuredtext.vim
+ln -sf ~/dotfiles/filetype/*.vim ~/.vim/ftplugin/
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
