@@ -15,6 +15,9 @@ set autoread
 " 入力中のコマンドをステータスに表示
 set showcmd
 
+" 左下の文字を非表示 (インサートモードなど)
+set noshowmode
+
 " スワップファイルの無効化
 set noswapfile
 
@@ -186,6 +189,9 @@ endfunction
 autocmd VimEnter *  NERDTree | call s:MoveToFileAtStart()
 " 終了時，NERDTree も終了
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Python の関数引数補完をコマンドライン上に表示
+let g:jedi#show_call_signatures = "2"
 
 " ---------- Filetype setting ----------
 " .py は Python ファイルとして認識
