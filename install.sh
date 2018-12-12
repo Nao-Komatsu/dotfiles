@@ -1,13 +1,16 @@
-#!/bin/sh
+#!/bin/bash
 
 # Bash setting
-ln -sf ~/dotfiles/.bashrc ~/.bashrc
+echo -e "\n--- Link to .bashrc ---"
+ln -sfv ~/dotfiles/.bashrc ~/.bashrc
 
-# vim-plug install
+# Install vim-plug
+echo -e "\n--- Install vim-plug ---"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Vim setting
-mkdir -p ~/.vim/ftplugin/
+echo -e "\n--- Link to Vim setting files ---"
+mkdir -pv ~/.vim/ftplugin/
 ln -sfv ~/dotfiles/filetype/*.vim ~/.vim/ftplugin/
 ln -sfv ~/dotfiles/.vimrc ~/.vimrc

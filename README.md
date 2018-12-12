@@ -5,11 +5,12 @@ Original dotfiles for myself.
 ## Usage
 
 ```
-cd ~
-git clone https://github.com/nsecdevs/dotfiles.git
-./dotfiles/install.sh
-source ~/.bashrc
-vim
+$ cd ~
+$ git clone https://github.com/nsecdevs/dotfiles.git
+$ cd dotfiles/
+$ ./install.sh
+$ source ~/.bashrc
+$ vim
 :PlugInstall
 ```
 
