@@ -13,6 +13,7 @@ fi
 alias ls='ls -aF --color=auto'
 alias ll='ls -lh --color=auto'
 alias df='df -h'
+alias less='less -R'
 
 alias mv='mv -i'
 alias rm='rm -i'
