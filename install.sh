@@ -14,3 +14,7 @@ echo -e "\n--- Link to Vim setting files ---"
 mkdir -pv ~/.vim/ftplugin/
 ln -sfv ~/dotfiles/filetype/*.vim ~/.vim/ftplugin/
 ln -sfv ~/dotfiles/.vimrc ~/.vimrc
+
+# Git setting
+echo -e "\n--- Link to .gitconfig ---"
+ln -sfv ~/dotfiles/.gitconfig ~/.gitconfig
