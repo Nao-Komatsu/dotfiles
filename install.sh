@@ -4,6 +4,9 @@
 echo -e "\n--- Link to .bashrc ---"
 ln -sfv ~/dotfiles/.bashrc ~/.bashrc
 
+echo -e "\n--- Create to .myconf ---"
+cp -v ~/dotfiles/.myconf ~/.myconf
+
 # Install vim-plug
 echo -e "\n--- Install vim-plug ---"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
