@@ -23,8 +23,6 @@ alias su='su -'
 
 # Environment variable
 
-COLOR="36"
-
 PS1="[\[\033[${COLOR}m\]\$?\[\033[00m\]|\[\033[${COLOR}m\]\u@\h \[\033[00m\]\w]\n\\$ "
 
 EDITOR=vim
