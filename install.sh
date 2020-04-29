@@ -2,6 +2,11 @@
 
 # Bash setting
 echo -e "\n--- Link to .bashrc ---"
+if [ -f ~/.bashrc.bak ]; then
+	echo ".bashrc.bak file found."
+else
+	cp -v ~/.bashrc ~/.bashrc.bak
+fi
 ln -sfv ~/dotfiles/.bashrc ~/.bashrc
 
 echo -e "\n--- Create to .myconf ---"
