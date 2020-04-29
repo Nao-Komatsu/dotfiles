@@ -23,7 +23,7 @@ alias su='su -'
 
 # Environment variable
 
-PS1="[\[\033[${COLOR}m\]\$?\[\033[00m\]|\[\033[${COLOR}m\]\u@\h \[\033[00m\]\w]\n\\$ "
+PS1="\[\033[01;${COLOR}m\]\u@\h\[\033[00m\]:\[\033[01;32m\]\$?\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\$ "
 
 EDITOR=vim
 PYTHONDONTWRITEBYTECODE=1
